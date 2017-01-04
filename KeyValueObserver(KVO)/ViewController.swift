@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        addObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt), options: [.old, .new], context: nil)
     }
     
     // MARK: - Actions
@@ -32,6 +33,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == #keyPath(configurationManager.configuration.updateAt) {
+            timeLabel.text = configurationManager.updatedAt
+        }
+    }
 }
 
