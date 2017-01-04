@@ -12,6 +12,8 @@
 		C278A8721E1C8C3800D7862B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C278A8701E1C8C3800D7862B /* Main.storyboard */; };
 		C278A8741E1C8C3800D7862B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C278A8731E1C8C3800D7862B /* Assets.xcassets */; };
 		C278A8771E1C8C3800D7862B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C278A8751E1C8C3800D7862B /* LaunchScreen.storyboard */; };
+		C278A87F1E1C8E0600D7862B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278A87E1E1C8E0600D7862B /* Configuration.swift */; };
+		C278A8811E1C8E1A00D7862B /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278A8801E1C8E1A00D7862B /* ConfigurationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C278A8731E1C8C3800D7862B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C278A8761E1C8C3800D7862B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C278A8781E1C8C3800D7862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C278A87E1E1C8E0600D7862B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		C278A8801E1C8E1A00D7862B /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				C278A86C1E1C8C3800D7862B /* AppDelegate.swift */,
+				C278A87E1E1C8E0600D7862B /* Configuration.swift */,
+				C278A8801E1C8E1A00D7862B /* ConfigurationManager.swift */,
 				C278A86E1E1C8C3800D7862B /* ViewController.swift */,
 				C278A8701E1C8C3800D7862B /* Main.storyboard */,
 				C278A8731E1C8C3800D7862B /* Assets.xcassets */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C278A8811E1C8E1A00D7862B /* ConfigurationManager.swift in Sources */,
+				C278A87F1E1C8E0600D7862B /* Configuration.swift in Sources */,
 				C278A86F1E1C8C3800D7862B /* ViewController.swift in Sources */,
 				C278A86D1E1C8C3800D7862B /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +308,7 @@
 				C278A87D1E1C8C3800D7862B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
