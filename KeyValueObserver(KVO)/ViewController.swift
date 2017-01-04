@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt), options: [.old, .new], context: nil)
+        addObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt), options: [.old, .new, .initial], context: nil)
     }
     
     // MARK: - Actions
@@ -37,6 +37,11 @@ class ViewController: UIViewController {
         if keyPath == #keyPath(configurationManager.configuration.updateAt) {
             timeLabel.text = configurationManager.updatedAt
         }
+    }
+    
+    // MARK: - Deinitialization
+    deinit {
+        removeObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updateAt))
     }
 }
 
