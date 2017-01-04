@@ -10,9 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Properties
+    @IBOutlet var timeLabel: UILabel!
+    
+    // MARK: -
+    let configurationManager = ConfigurationManager(withConfiguration: Configuration())
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    // MARK: - Actions
+    @IBAction func updateConfiguration(sender: UIButton) {
+        configurationManager.updateConfiguration()
     }
 
     override func didReceiveMemoryWarning() {
